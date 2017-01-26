@@ -1,2 +1,2 @@
-# chartjs_practice
+# chartjs
 Practice files for chartjs

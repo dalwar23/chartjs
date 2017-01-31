@@ -81,7 +81,23 @@ $(document).ready(function(){
 
 			var LineGraph = new Chart(ctx, {
 				type: 'line',
-				data: chartdata
+				data: chartdata,
+				options: {
+				  scales: {
+				    yAxes: [{
+				      scaleLabel: {
+				        display: true,
+				        labelString: 'num. prefixes'
+				      }
+				    }],
+				    xAxes:[{
+				    	scaleLabel:{
+				    		display: true,
+				    		labelString: 'Date'
+				    	}
+				    }]
+				  }
+				}
 			});
 		},
 		error : function(data) {
